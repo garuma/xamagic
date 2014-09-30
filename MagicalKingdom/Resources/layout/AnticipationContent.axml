@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="false"
+    android:padding="16dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:src="@drawable/james"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:id="@+id/imageView1"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="8dp" />
+        <TextView
+            android:text="No Big Deal Monkey Viewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadBtn"
+            android:textAllCaps="true"
+            android:minWidth="96dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:textSize="22sp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:clipChildren="false"
+        android:layout_weight="1">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pictureCanvas"
+            android:layout_gravity="center_horizontal|top"
+            android:padding="8dp"
+            android:background="@drawable/vignette_background"
+            android:layout_margin="64dp">
+            <ImageView
+                android:src="@drawable/tamarin_picture"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/picture"
+                android:minHeight="32dp"
+                android:minWidth="32dp"
+                android:adjustViewBounds="true" />
+            <magicalkingdom.XamarinSpinnerView
+                android:layout_width="64dp"
+                android:layout_height="56dp"
+                android:id="@+id/pictureProgress"
+                android:visibility="invisible"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

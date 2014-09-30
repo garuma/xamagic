@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:background="#00897b"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+        <ImageView
+            android:src="@drawable/chris"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/avatarImage" />
+        <TextView
+            android:text="Chris Hardy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:gravity="center_vertical"
+            android:textColor="#f0ffffff"
+            android:layout_marginLeft="16dp"
+            android:textSize="20sp"
+            android:paddingBottom="2dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:id="@+id/frameLayout1"
+        android:layout_weight="1"
+        android:background="#fcfcfc">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/messageContainer"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+            <TextView
+                android:text="Hey! How is going?"
+                style="@style/TextBubbleSecondary" />
+            <TextView
+                android:text="Good good, what's up?"
+                style="@style/TextBubblePrimary"
+                android:layout_gravity="right" />
+            <TextView
+                android:text="Can you remind everyone of my wearable talk?"
+                style="@style/TextBubbleSecondary" />
+            <TextView
+                android:text="Sure, when is it?"
+                style="@style/TextBubblePrimary"
+                android:layout_gravity="right" />
+            <TextView
+                android:text="Thursday 15PM in room 201"
+                style="@style/TextBubbleSecondary"
+                android:layout_gravity="left"
+                android:id="@+id/textBubble"
+                android:visibility="invisible" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/view1"
+            android:layout_gravity="top"
+            android:background="@drawable/small_shadow_vertical" />
+    </FrameLayout>
+</LinearLayout>

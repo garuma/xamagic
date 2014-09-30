@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicalKingdom", "MagicalKingdom\MagicalKingdom.csproj", "{72B3A504-17B4-4E3A-9782-807FD9162152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tau.Core", "..\Tau\Tau.Core\Tau.Core.csproj", "{71F736B8-4B75-4696-A4D4-4743A2D1BF04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tau.Android", "..\Tau\Tau.Android\Tau.Android.csproj", "{1BA8AB13-0EDF-47F7-87B6-20807A5CDEC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BA8AB13-0EDF-47F7-87B6-20807A5CDEC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA8AB13-0EDF-47F7-87B6-20807A5CDEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA8AB13-0EDF-47F7-87B6-20807A5CDEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA8AB13-0EDF-47F7-87B6-20807A5CDEC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F736B8-4B75-4696-A4D4-4743A2D1BF04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F736B8-4B75-4696-A4D4-4743A2D1BF04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F736B8-4B75-4696-A4D4-4743A2D1BF04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F736B8-4B75-4696-A4D4-4743A2D1BF04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B3A504-17B4-4E3A-9782-807FD9162152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B3A504-17B4-4E3A-9782-807FD9162152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B3A504-17B4-4E3A-9782-807FD9162152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B3A504-17B4-4E3A-9782-807FD9162152}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MagicalKingdom\MagicalKingdom.csproj
+	EndGlobalSection
+EndGlobal

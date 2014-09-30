@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{72B3A504-17B4-4E3A-9782-807FD9162152}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MagicalKingdom</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>MagicalKingdom</AssemblyName>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InterpolatorGraphView.cs" />
+    <Compile Include="AnimationConstants.cs" />
+    <Compile Include="IExperiment.cs" />
+    <Compile Include="Experiments\BounceMarkerContentFragment.cs" />
+    <Compile Include="Experiments\AnticipationContentFragment.cs" />
+    <Compile Include="Views\XamarinSpinnerView.cs" />
+    <Compile Include="Experiments\SquashStretchContentFragment.cs" />
+    <Compile Include="Views\AvatarDrawable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_btn_stars.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_btn_stars.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_btn_stars.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_btn_stars.png" />
+    <AndroidResource Include="Resources\drawable\btn_bg_inactive.xml" />
+    <AndroidResource Include="Resources\drawable\btn_bg_normal.xml" />
+    <AndroidResource Include="Resources\drawable\btn_bg_pressed.xml" />
+    <AndroidResource Include="Resources\drawable\btn_bg.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\layout\BounceMarkerContent.axml" />
+    <AndroidResource Include="Resources\drawable-nodpi\map_background.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_map_xampin.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_map_xampin.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_map_xampin.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_map_xampin.png" />
+    <AndroidResource Include="Resources\drawable\small_shadow.xml" />
+    <AndroidResource Include="Resources\layout\AnticipationContent.axml" />
+    <AndroidResource Include="Resources\drawable\vignette_background.xml" />
+    <AndroidResource Include="Resources\drawable-nodpi\tamarin_picture.jpg" />
+    <AndroidResource Include="Resources\drawable-nodpi\james.png" />
+    <AndroidResource Include="Resources\layout\SquashStretchContent.axml" />
+    <AndroidResource Include="Resources\drawable-nodpi\chris.png" />
+    <AndroidResource Include="Resources\drawable\small_shadow_vertical.xml" />
+    <AndroidResource Include="Resources\drawable\bubble_background.xml" />
+    <AndroidResource Include="Resources\drawable\bubble_background_2.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\drawable-nodpi\" />
+    <Folder Include="Experiments\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Tau\Tau.Android\Tau.Android.csproj">
+      <Project>{1BA8AB13-0EDF-47F7-87B6-20807A5CDEC0}</Project>
+      <Name>Tau.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tau\Tau.Core\Tau.Core.csproj">
+      <Project>{71F736B8-4B75-4696-A4D4-4743A2D1BF04}</Project>
+      <Name>Tau.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
