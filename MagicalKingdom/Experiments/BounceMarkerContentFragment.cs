@@ -39,6 +39,7 @@ namespace MagicalKingdom
 		{
 			var time = slowMode ? AnimationConstants.SlowAnimationTime : AnimationConstants.NormalAnimationTime;
 			var interpolator = curve.ToAndroidInterpolator ();
+			marker.Visibility = ViewStates.Visible;
 			var animator = ObjectAnimator.OfFloat (marker, "translationY",
 			                                       -(View.Height / 3 + marker.Height / 2),
 			                                       0);

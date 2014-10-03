@@ -51,6 +51,7 @@ namespace MagicalKingdom
 				new LinearCurve (),
 				new QuadraticCurve (),
 				new InvertedQuadraticCurve (),
+				new PowerCurve (5),
 				new SineCurve ()
 			};
 

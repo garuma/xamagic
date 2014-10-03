@@ -4,7 +4,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:clipChildren="false"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="?android:colorBackground">
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
@@ -49,7 +50,9 @@
                 android:id="@+id/picture"
                 android:minHeight="32dp"
                 android:minWidth="32dp"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:maxWidth="350dp"
+                android:maxHeight="350dp" />
             <magicalkingdom.XamarinSpinnerView
                 android:layout_width="64dp"
                 android:layout_height="56dp"

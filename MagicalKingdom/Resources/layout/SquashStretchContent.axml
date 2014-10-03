@@ -67,7 +67,7 @@
                 style="@style/TextBubblePrimary"
                 android:layout_gravity="right" />
             <TextView
-                android:text="Thursday 15PM in room 201"
+                android:text="Too late, was yesterday..."
                 style="@style/TextBubbleSecondary"
                 android:layout_gravity="left"
                 android:id="@+id/textBubble"

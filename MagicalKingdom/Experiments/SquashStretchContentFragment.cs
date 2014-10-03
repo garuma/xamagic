@@ -48,17 +48,20 @@ namespace MagicalKingdom
 			textBubble.PivotX = textBubble.Width / 2;
 			textBubble.PivotY = 0;
 
-			var fallTime = 300;
+			var fallTime = 270;
 			var time = 600;
 
 			if (slowMode) {
-				fallTime *= 5;
+				fallTime *= 4;
 				time *= 5;
 			}
 
 			var interpolator = curve.ToAndroidInterpolator ();
 
-			var animator = ObjectAnimator.OfFloat (textBubble, "translationY", 200, 0);
+			var deltaY = TypedValue.ApplyDimension (ComplexUnitType.Dip, 200, Resources.DisplayMetrics);
+			var animator = ObjectAnimator.OfPropertyValuesHolder (textBubble,
+			                                                      PropertyValuesHolder.OfFloat ("translationY", deltaY, 0),
+			                                                      PropertyValuesHolder.OfFloat ("alpha", 0, 1));
 			animator.SetAutoCancel (true);
 			animator.SetDuration (fallTime);
 			animator.SetInterpolator (new Android.Views.Animations.AccelerateInterpolator ());
