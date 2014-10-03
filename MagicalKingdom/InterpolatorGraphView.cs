@@ -89,7 +89,7 @@ namespace MagicalKingdom
 		}
 
 		int Precision {
-			get { return (int)TypedValue.ApplyDimension (ComplexUnitType.Dip, 1, Metrics) * 4; }
+			get { return (int)TypedValue.ApplyDimension (ComplexUnitType.Dip, 1, Metrics); }
 		}
 
 		protected override void OnLayout (bool changed, int left, int top, int right, int bottom)
