@@ -100,11 +100,16 @@ namespace MagicalKingdom
 
 		void SwitchToExperiment<TFragment> () where TFragment : Fragment, IExperiment, new()
 		{
+			if (currentExperiment is TFragment)
+				return;
+
 			var frag = new TFragment ();
 			FragmentManager.BeginTransaction ()
+				.SetCustomAnimations (Resource.Animator.fragment_enter, Resource.Animator.fragment_exit)
 				.Replace (Resource.Id.contentContainer, frag)
 				.Commit ();
 			FragmentManager.ExecutePendingTransactions ();
+
 			currentExperiment = frag;
 			var curve = currentExperiment.CreatePreferredTimeCurve ();
 			currentExperiment.SetTimeCurve (curve);

@@ -93,6 +93,8 @@
     <AndroidResource Include="Resources\drawable\small_shadow_vertical.xml" />
     <AndroidResource Include="Resources\drawable\bubble_background.xml" />
     <AndroidResource Include="Resources\drawable\bubble_background_2.xml" />
+    <AndroidResource Include="Resources\animator\fragment_enter.xml" />
+    <AndroidResource Include="Resources\animator\fragment_exit.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -104,6 +106,7 @@
     <Folder Include="Resources\drawable-nodpi\" />
     <Folder Include="Experiments\" />
     <Folder Include="Views\" />
+    <Folder Include="Resources\animator\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Tau\Tau.Android\Tau.Android.csproj">
