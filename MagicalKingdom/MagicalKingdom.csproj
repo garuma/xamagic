@@ -109,11 +109,11 @@
     <Folder Include="Resources\animator\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Tau\Tau.Android\Tau.Android.csproj">
+    <ProjectReference Include="..\tau\Tau.Android\Tau.Android.csproj">
       <Project>{1BA8AB13-0EDF-47F7-87B6-20807A5CDEC0}</Project>
       <Name>Tau.Android</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Tau\Tau.Core\Tau.Core.csproj">
+    <ProjectReference Include="..\tau\Tau.Core\Tau.Core.csproj">
       <Project>{71F736B8-4B75-4696-A4D4-4743A2D1BF04}</Project>
       <Name>Tau.Core</Name>
     </ProjectReference>
