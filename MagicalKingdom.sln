@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicalKingdom", "MagicalKingdom\MagicalKingdom.csproj", "{72B3A504-17B4-4E3A-9782-807FD9162152}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tau.Core", "..\Tau\Tau.Core\Tau.Core.csproj", "{71F736B8-4B75-4696-A4D4-4743A2D1BF04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tau.Core", "tau\Tau.Core\Tau.Core.csproj", "{71F736B8-4B75-4696-A4D4-4743A2D1BF04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tau.Android", "..\Tau\Tau.Android\Tau.Android.csproj", "{1BA8AB13-0EDF-47F7-87B6-20807A5CDEC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tau.Android", "tau\Tau.Android\Tau.Android.csproj", "{1BA8AB13-0EDF-47F7-87B6-20807A5CDEC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
